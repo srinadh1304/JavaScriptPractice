@@ -11,6 +11,6 @@ for(let number of numbers){
     sum += number;
 }
 
-avgerage = sum/5;
+average = sum/5;
 
 console.log("sum: "+ sum+ " average: "+ average);
