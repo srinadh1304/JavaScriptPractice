@@ -3,35 +3,35 @@ let number = parseInt(prompt("Enter the units digits [1,10,100,1000....]:  "));
 
 switch (number) {
     case 1:
-        console.log("The digit is : UNIT");
+        console.log("UNIT");
         break;
 
     case 10:
-        console.log("The digit is : TEN");
+        console.log("TEN");
         break;
 
     case 100:
-        console.log("The digit is : HUNDRED");
+        console.log("HUNDRED");
         break;
 
     case 1000:
-        console.log("The digit is : THOUSAND");
+        console.log("THOUSAND");
         break;
 
     case 10000:
-        console.log("The digit is : TEN THOUSAND");
+        console.log("TEN THOUSAND");
         break;
 
     case 100000:
-        console.log("The digit is : ONE LAKH");
+        console.log("ONE LAKH");
         break;
 
     case 1000000:
-        console.log("The digit is : TEN LAKHS");
+        console.log("TEN LAKHS");
         break;
 
     case 10000000:
-        console.log("The digit is : ONE CRORE");
+        console.log("ONE CRORE");
         break;
 
     default:
