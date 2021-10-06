@@ -2,12 +2,12 @@ const prompt = require("prompt-sync")();
 let number=parseInt(prompt("Enter the number "))
 var tempNumber=number;
 var primeFactors= new Array();
-for(let i = 2; i*i <= number; i++) 
+for(let index = 2; index*index <= number; index++) 
 {
-    while (tempNumber%i == 0)
+    while (tempNumber%index == 0)
     {
-        primeFactors.push(i);
-        tempNumber /= i;
+        primeFactors.push(index);
+        tempNumber /= index;
     }
 }
 if(tempNumber!=1)
