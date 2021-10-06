@@ -1,5 +1,5 @@
 const prompt = require("prompt-sync")();
-console.log("1:Feet-Inch\n2:Feet-meter\n3:Inch-feet\n4:Meter-Feet\n")
+console.log("1: Feet to Inch\n2: Feet to meter\n3: Inch to feet\n4: Meter to Feet\n")
 
 let choice = parseInt(prompt("Enter Your choice : "));
 let userValue = parseInt(prompt("Enter the Value: "));
@@ -17,7 +17,5 @@ switch (choice) {
     case 4:
         console.log("Meter To Feet \n Meter = " + userValue + " To Feet = " + userValue * 3.28084);
         break;
-    default:
-        console.log("Enter valid Numbers");
-        break;
+   
 }
