@@ -1,8 +1,7 @@
-const prompt = require("prompt-sync")();
+const args = process.argv.slice(2);
+let choice = parseInt(args[0]);
+let userValue = parseInt(args[1]);
 console.log("1: Feet to Inch\n2: Feet to meter\n3: Inch to feet\n4: Meter to Feet\n")
-
-let choice = parseInt(prompt("Enter Your choice : "));
-let userValue = parseInt(prompt("Enter the Value: "));
 
 switch (choice) {
     case 1:

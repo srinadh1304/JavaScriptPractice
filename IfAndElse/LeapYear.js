@@ -1,6 +1,5 @@
-const prompt = require('prompt-sync')();
-let year = prompt("Enter Year : ");
-let yearToCheck = parseInt(year);
+const args = process.argv.slice(2);
+let yearToCheck = parseInt(args[0]);
 let isLeapYear = false;
 
 if ((yearToCheck % 4 == 0 && yearToCheck % 100 == 0) || yearToCheck % 4 == 0) {

@@ -1,6 +1,6 @@
-const prompt = require("prompt-sync")();
-let firtsNumber = prompt("Enter first number: ");
-let secondNumber = prompt("Enter second number: ");
+const args = process.argv.slice(2);
+let firtsNumber = args[0];
+let secondNumber = args[1];
 
 function PalindromeChecker(number) {
     let reverseNumber = number.split("").reverse();

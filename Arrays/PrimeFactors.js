@@ -1,5 +1,5 @@
-const prompt = require("prompt-sync")();
-let number=parseInt(prompt("Enter the number "))
+const args = process.argv.slice(2);
+let number = parseInt(args[0]);
 var tempNumber=number;
 var primeFactors= new Array();
 for(let index = 2; index*index <= number; index++) 

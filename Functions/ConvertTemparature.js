@@ -1,4 +1,4 @@
-const prompt = require("prompt-sync")();
+const args = process.argv.slice(2);
 
 function CelsiusToFahrenheit(celsius) {
     return Math.round((celsius * 9 / 5) + 32);
@@ -11,11 +11,11 @@ function FahrenheitToCelsius(fahrenheit) {
 function userChoice() {
 
     console.log("1-Fahrenheit to Celsius \n2-Celsius to Fahrenheit\n");
-    let choice = parseInt(prompt());
+    let choice = parseInt(args[0]);
     switch (choice) {
 
         case 1:
-            let fahrenheit = prompt("Enter temparature in Fahrenheit: ");
+            let fahrenheit = parseInt(args[1]);
             if (!(fahrenheit >= 32 && fahrenheit <= 212)) {
                 console.log("The temparature Should be in range 32 to 212");
                 return;
@@ -25,7 +25,7 @@ function userChoice() {
             break;
 
         case 2:
-            let celsius = prompt("Enter degree in Celsius : ");
+            let celsius = parseInt(args[1]);
             if (!(celsius >= 0 && celsius <= 100)) {
                 console.log("The temparature Should be in range 0 to 100");
                 return;

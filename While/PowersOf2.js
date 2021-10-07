@@ -1,6 +1,5 @@
-const prompt = require("prompt-sync")();
-let number = prompt("Enter The value of n : ");
-
+const args = process.argv.slice(2);
+let number = parseInt(args[0]);
 let result = 1;
 let index = 1;
 while((index <= number)  && (result < 256)) {

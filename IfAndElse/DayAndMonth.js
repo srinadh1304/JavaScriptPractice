@@ -1,7 +1,6 @@
-const prompt = require('prompt-sync')();
-
-let day = prompt("Enter day Of the Month : ");
-let month = prompt("Enter month Of the Year : ");
+const args = process.argv.slice(2);
+let day = args[0];
+let month = args[1];
 console.log("Day : " + day + "/" + month );
 
 day = parseInt(day);

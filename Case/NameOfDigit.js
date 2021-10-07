@@ -1,6 +1,5 @@
-const prompt = require("prompt-sync")();
-let number = parseInt(prompt("Enter the units digits [1,10,100,1000....]:  "));
-
+const args = process.argv.slice(2);
+let number = parseInt(args[0]);
 switch (number) {
     case 1:
         console.log("UNIT");

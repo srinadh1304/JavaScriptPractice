@@ -1,6 +1,6 @@
-const prompt = require('prompt-sync')();
-let digit = prompt("Enter the digits like [1,10,100,1000....] : ");
-digit = parseInt(digit);
+const args = process.argv.slice(2);
+let digit = parseInt(args[0]);
+
 
 if (digit == 1) {
     console.log("The digit is : UNIT");

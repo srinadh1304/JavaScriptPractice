@@ -1,10 +1,9 @@
-const prompt = require('prompt-sync')();
+const args = process.argv.slice(2);
+let firstNumber = args[0];
+let secondNumber = args[1];
+let thirdNumber=args[2];
 let minimumResult = 0;
 let maximumResult = 0;
-
-let firstNumber = prompt('Enter First Number : ');
-let secondNumber = prompt('Enter Second Number  : ');
-let thirdNumber = prompt('Enter Third Number  : ');
 
 firstNumber = parseInt(firstNumber);
 secondNumber = parseInt(secondNumber);

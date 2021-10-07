@@ -1,5 +1,5 @@
-const prompt = require("prompt-sync")();
-
+const args = process.argv.slice(2);
+let number = args[0];
 function checkPalindrome(number) {
     const reverseNumber = parseFloat(number.toString().split('').reverse().join(''));
     console.log("Palindrome of the number = " +reverseNumber);
@@ -22,8 +22,6 @@ function checkPrime(number) {
     else
         return true;
 }
-
-let number = prompt("Enter the  number : ");
 
 if (checkPrime(number))
     console.log(number+" is prime");
