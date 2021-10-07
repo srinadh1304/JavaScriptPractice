@@ -1,5 +1,5 @@
-const prompt = require("prompt-sync")();
-let number = prompt("Enter the number : ");
+const args = process.argv.slice(2);
+let number = parseInt(args[0]);
 
 let factorial = 1;
 

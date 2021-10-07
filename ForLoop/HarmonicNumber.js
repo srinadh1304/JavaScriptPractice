@@ -1,5 +1,5 @@
-const prompt = require("prompt-sync")();
-let number = prompt("Enter value of n : ");
+const args = process.argv.slice(2);
+let number = parseInt(args[0]);
 let result = 0;
 for(let index=1; index<=number; index++)
 {

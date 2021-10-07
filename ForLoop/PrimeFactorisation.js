@@ -1,5 +1,5 @@
-const prompt = require("prompt-sync")();
-let number = prompt("Enter the number : ");
+const args = process.argv.slice(2);
+let number = parseInt(args[0]);
 console.log("The Prime Factors for " + number + " is : ");
 
 while (number % 2 == 0) {

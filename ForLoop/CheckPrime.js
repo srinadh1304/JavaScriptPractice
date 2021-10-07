@@ -1,6 +1,5 @@
-const prompt = require("prompt-sync")();
-
-let number = parseInt(prompt("Enter the Number : "));
+const args = process.argv.slice(2);
+let number = parseInt(args[0]);
 let isPrime = true;
 
 if (number === 1) {

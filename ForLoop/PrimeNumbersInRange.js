@@ -1,7 +1,6 @@
-const prompt = require("prompt-sync")();
-
-const lowerRange = parseInt(prompt('Enter lower number: '));
-const higherRange = parseInt(prompt('Enter higher number: '));
+const args = process.argv.slice(2);
+let lowerRange = parseInt(args[0]);
+let higherRange = parseInt(args[1]);
 
 console.log("The prime numbers between " + lowerRange + " and "  + higherRange + " are:");
 
